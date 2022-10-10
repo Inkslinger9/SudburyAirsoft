@@ -41,27 +41,30 @@ a{
     margin-left: auto;
 }
 
-@media only screen and (max-width: 893px){
+@media only screen and (max-device-width: 415px) ,(max-width:893px){
 
     .main-nav{
         height: fit-content;
         justify-content: center;
         flex-direction: column;
-        row-gap: 30px;
+        row-gap: 80px;
+        font-size: 5em;
     }
-    .push{
+    .push{ 
         margin:unset;
     }
 
     a{
-        padding: 15px 30vw;
+        padding: 15px 1em;
     }
 
-  
+   .container{
+    height: 40vh !important; 
+   }
 
-    html{
+    /* html{
         width:  100vw;
-    }
+    } */
   
 }
 
@@ -76,7 +79,7 @@ a{
     justify-content: center;
     align-items: center;
     /* width: 100vw; */
-    height: 100vh;
+    height: 90vh;
     background-image: url(background.jpg);
     background-size:cover;
     background-position: center;

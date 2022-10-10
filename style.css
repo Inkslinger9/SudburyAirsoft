@@ -48,7 +48,7 @@ a{
         justify-content: center;
         flex-direction: column;
         row-gap: 80px;
-        font-size: 5em;
+        font-size: 2em;
     }
     .push{ 
         margin:unset;

@@ -7,13 +7,15 @@ html{
 body{
     margin: auto 0;
 }
+
+
 .zone {
     color:#FFF;
     font-size:2em;
     font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
-    /* border-radius:4px; */
-    /* border:1px solid #bbb; */
     transition: all 0.3s linear;
+    background-color: #000000;
+    margin: 0%;
 }
 
 
@@ -30,43 +32,21 @@ body{
 
 
 
-a{
+.main-nav a, .footer-link{
 
-    padding: 20px;
+    padding: 1em;
     text-decoration: none;
     color: white;
 }
+
 
 .push{
     margin-left: auto;
 }
 
-@media only screen and (max-device-width: 415px) ,(max-width:893px){
 
-    .main-nav{
-        height: fit-content;
-        justify-content: center;
-        flex-direction: column;
-        row-gap: 80px;
-        font-size: 2em;
-    }
-    .push{ 
-        margin:unset;
-    }
 
-    a{
-        padding: 15px 1em;
-    }
 
-   .container{
-    height: 40vh !important; 
-   }
-
-    /* html{
-        width:  100vw;
-    } */
-  
-}
 
 
 
@@ -74,24 +54,111 @@ a{
 
 
 /* COVER */
-.container{
+.container-main{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* width: 100vw; */
     height: 90vh;
     background-image: url(background.jpg);
     background-size:cover;
     background-position: center;
 }
 
-.cover-title{
-  /* width: 100vw; */
-  text-align: right;
-  padding-left: 20%;
-  padding-bottom: 10%;
-  font-size: 2em;
+
+.container2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 90vh;
+    background-image: url(background.jpg);
+    background-size:cover;
+    background-position: center;
+    width: 100%;
 }
+
+
+
+
+.cover-title{
+    text-align: right;
+    padding-right: 5%;
+    margin-top: 0%;
+    font-size: 2em;
+    width: 100%;
+}
+
+
+
+
+/* Main */
+
+/* About paragraph */
+
+.container2 {
+    position: relative; /* Ensure relative positioning for absolute children */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align content */
+    justify-content: center; /* Center align content */
+    padding: 20px; /* Add padding for better spacing */
+  }
+
+
+
+.about-paragraph {
+    width: 90%; /* Adjust width for better mobile fit */
+    margin: 20px auto; /* Center and provide spacing */
+    text-align: center; /* Center align for mobile */
+    max-width: 800px; /* Limit the maximum width to prevent overflowing */
+  }
+  
+ 
+
+  
+
+   
+
+
+.calendar {
+    background-color: #000000;
+    display: flex;
+    flex-direction: column; /* Arrange header and iframe in a column */
+    align-items: center; /* Center items horizontally */
+    background-image: url(img/Covercalendar.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Establish position context for absolute positioning */
+  }
+  
+
+.calendar-header {
+    color: #ffffff;
+    font-size: 2em;
+    z-index: 1; /* Ensure the header appears above the background image */
+    margin-top: 20px; /* Adjust as needed */
+    font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+    
+  }
+
+
+/* SEPERATER */
+
+.seperater{
+    width: 100%;
+    height: 10px;
+
+    background: #110202; /* Old browsers */
+    background: -moz-linear-gradient(top, #110202 0%, #B13737 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#110202), color-stop(100%,#B13737)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #110202 0%,#B13737 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #110202 0%,#B13737 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #110202 0%,#B13737 100%); /* IE10+ */
+    background: linear-gradient(top, #110202 0%,#B13737 100%); /* W3C */
+}
+
+
+
+
 
 /* GRID */
 
@@ -103,7 +170,7 @@ a{
 }
 
 
-.box>img{
+.box img{
     width: 100%;
     height: 100%;
 }
@@ -166,3 +233,39 @@ footer{
     background: -ms-linear-gradient(top, #0E0101 0%,110202 44%,#0E0101 100%); /* IE10+ */
     background: linear-gradient(top, #0E0101 0%,110202 44%,#0E0101 100%); /* W3C */
 }
+
+
+
+@media only screen and (max-device-width: 415px) ,(max-width:893px){
+
+    .main-nav{
+        height: fit-content;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 10px;
+        font-size: 2em;
+    }
+    .push{ 
+        margin:unset;
+    }
+
+    a{
+        padding: 15px 1em;
+    }
+
+   .container{
+    height: 40vh !important; 
+   }
+  
+ 
+  
+
+
+}
+
+
+
+
+
+/* TEST */
+

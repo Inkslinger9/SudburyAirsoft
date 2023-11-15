@@ -1,12 +1,11 @@
 
 
-html{
-    width: 100vw;
-} 
 
-body{
-    margin: auto 0;
-}
+
+body, html {
+    margin: 0;
+    padding: 0;
+  }
 
 
 .zone {

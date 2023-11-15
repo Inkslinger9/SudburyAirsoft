@@ -242,7 +242,7 @@ footer{
         height: fit-content;
         justify-content: center;
         flex-direction: column;
-        row-gap: 10px;
+        row-gap: 60px;
         font-size: 2em;
     }
     .push{ 
@@ -250,7 +250,7 @@ footer{
     }
 
     a{
-        padding: 30px 1em;
+        padding: 15px 1em;
     }
 
    .container{

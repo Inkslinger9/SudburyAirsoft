@@ -17,7 +17,6 @@ body{
 }
 
 
-
 /* NAVBAR*/
 
 .navbar{
@@ -106,6 +105,40 @@ footer{
 
 
 
+
+
+
+
+
+
+
+  /* GALLERY*/
+
+  .gzone{
+    cursor: pointer;
+    /* display: inline-block; */
+    text-align: center;
+    font-size: 10em;
+    border-radius: 4px;
+    transition: all 0.3s linear;
+  }
+
+.gallery{
+    padding: 10%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.gallery img{
+    width: 100%;
+}
+
+
+
+
+
 /* For smaller screens (phones) */
 @media screen and (max-width: 767px) {
    
@@ -115,6 +148,12 @@ footer{
         font-size: large;
         font-family:'Courier New', Courier, monospace;
     }
+
+    .gallery{
+        grid-template-columns: 1fr;
+    }
+
+
 
 
   }

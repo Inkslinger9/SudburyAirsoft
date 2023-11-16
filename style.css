@@ -49,6 +49,8 @@ body{
     color: aliceblue;
     font-size: x-large;
     font-family:'Courier New', Courier, monospace;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
 }
 
 

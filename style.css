@@ -37,7 +37,9 @@ body{
     cursor:default;
 }
 
-
+.navbar-toggler{
+    background-color:white;
+}
 
 
 

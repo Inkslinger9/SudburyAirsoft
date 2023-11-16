@@ -1,221 +1,94 @@
-
-
-
-
-body, html {
-    margin: 0;
-    padding: 0;
-    
-  }
-
-
-.zone {
-    color:#FFF;
-    font-size:2em;
-    font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
-    transition: all 0.3s linear;
-    background-color: #000000;
-    margin: 0%;
-}
-
-
-
-
-/* NAV */
-.main-nav{
-    display: flex;
-    list-style: none;
-    margin: 0;
-    align-items: center;
-    height: 10vh;
-}
-
-
-
-.main-nav a, .footer-link{
-
-    padding: 1em;
-    text-decoration: none;
-    color: white;
-}
-
-
-.push{
-    margin-left: auto;
-}
-
-
-
-
-
-
-
-
-
-
-/* COVER */
-.container-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
-    background-image: url(background.jpg);
-    background-size:cover;
-    background-position: center;
-}
-
-
-.container2{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    height: 90vh;
-    background-image: url(background.jpg);
-    background-size:cover;
-    background-position: center;
+body, html{
     width: 100%;
-}
+    height: 100%;
 
-
-
-
-.cover-title{
-    text-align: right;
-    padding-right: 5%;
-    margin-top: 0%;
-    font-size: 2em;
-    width: 100%;
-}
-
-
-
-
-/* Main */
-
-/* About paragraph */
-
-.container2 {
-    position: relative; /* Ensure relative positioning for absolute children */
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center align content */
-    justify-content: center; /* Center align content */
-    padding: 20px; /* Add padding for better spacing */
-  }
-
-
-
-.about-paragraph {
-    width: 90%; /* Adjust width for better mobile fit */
-    margin: 20px auto; /* Center and provide spacing */
-    text-align: center; /* Center align for mobile */
-    max-width: 800px; /* Limit the maximum width to prevent overflowing */
-  }
-  
- 
-
-  
-
-   
-
-
-.calendar {
-    background-color: #000000;
-    display: flex;
-    flex-direction: column; /* Arrange header and iframe in a column */
-    align-items: center; /* Center items horizontally */
-    background-image: url(img/Covercalendar.jpg);
+    /* Perfect full page background from css tricks */
+    background: url(img/Covercalendar.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    background-position: center;
-    position: relative; /* Establish position context for absolute positioning */
-  }
-  
+}
 
-.calendar-header {
-    color: #ffffff;
-    font-size: 2em;
-    z-index: 1; /* Ensure the header appears above the background image */
-    margin-top: 20px; /* Adjust as needed */
-    font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
-    
-  }
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
 
-/* SEPERATER */
 
-.seperater{
-    width: 100%;
-    height: 10px;
+/* NAVBAR*/
 
-    background: #110202; /* Old browsers */
-    background: -moz-linear-gradient(top, #110202 0%, #B13737 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#110202), color-stop(100%,#B13737)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #110202 0%,#B13737 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #110202 0%,#B13737 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #110202 0%,#B13737 100%); /* IE10+ */
-    background: linear-gradient(top, #110202 0%,#B13737 100%); /* W3C */
+.navbar{
+    background-image: linear-gradient(rgb(58, 2, 2),rgb(85, 5, 5),rgb(52, 2, 2));
+}
+
+.navbar a{
+    color: aliceblue;
+}
+
+.active{
+    color: #BE3144 ;
+}
+
+.navbar-brand:hover{
+    color: aliceblue;
+    cursor:default;
 }
 
 
 
 
 
-/* GRID */
+/* MAIN*/
 
-.grid-wrapper{
-    display: grid;
-    gap:20px;
-    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
-    padding: 20px;
+.welcome-message{
+    color: aliceblue;
+    font-size: x-large;
+    font-family:'Courier New', Courier, monospace;
 }
 
 
-.box img{
-    max-width:  100%;
-    height: auto;
-    display: flex;
+.main-body{
+    height: 80%;
+    padding-top: 1rem;
+    flex: 1;
     justify-content: center;
-    align-items: center;
-
 }
+
+
 
 
 /* FOOTER */
+
 footer{
     text-align: center;
+    margin-top: auto;
 }
 
+
 .footer-link{
+  
     padding: 0;
+    font-size: x-large;
+    text-decoration: none;
 }
+
+
 
 .zone:hover {
     -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-}
-
-/*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
-/***********************************************************************
- *  Navigation Background
- **********************************************************************/
-.nav-color{
-    background: #AA3939; /* Old browsers */
-    background: -moz-linear-gradient(top, #AA3939 0%, #471212 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#AA3939), color-stop(100%,#471212)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #AA3939 0%,#471212 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #AA3939 0%,#471212 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #AA3939 0%,#471212 100%); /* IE10+ */
-    background: linear-gradient(top, #AA3939 0%,#471212 100%); /* W3C */
+    color: #1d0808;
 }
 
 
-
-/***********************************************************************
- *  FooterBackground
- **********************************************************************/
 .footer-color{
+    color:#FFF;
+    
     background: #110202; /* Old browsers */
     background: -moz-linear-gradient(top, #110202 0%, #B13737 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#110202), color-stop(100%,#B13737)); /* Chrome,Safari4+ */
@@ -225,51 +98,19 @@ footer{
     background: linear-gradient(top, #110202 0%,#B13737 100%); /* W3C */
 }
 
-/***********************************************************************
- *  Grid Background
- **********************************************************************/
-.grid-color{
-    background: #0E0101; /* Old browsers */
-    background: -moz-linear-gradient(top, #0E0101 0%, 110202 44%, #0E0101 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0E0101), color-stop(44%,110202), color-stop(100%,#0E0101)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #0E0101 0%,110202 44%,#0E0101 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #0E0101 0%,110202 44%,#0E0101 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #0E0101 0%,110202 44%,#0E0101 100%); /* IE10+ */
-    background: linear-gradient(top, #0E0101 0%,110202 44%,#0E0101 100%); /* W3C */
-}
 
 
 
-@media only screen and (max-device-width: 415px) ,(max-width:893px){
 
-    .main-nav{
-        height: fit-content;
-        justify-content: center;
-        flex-direction: column;
-        row-gap: 60px;
-        font-size: 2em;
-    }
-    .push{ 
-        margin:unset;
-    }
-
-    a{
-        padding: 15px 1em;
-    }
-
-   .container{
-    height: 40vh !important; 
-   }
-  
+/* For smaller screens (phones) */
+@media screen and (max-width: 767px) {
    
-  
-  
 
-}
+    .welcome-message{
+        color: aliceblue;
+        font-size: large;
+        font-family:'Courier New', Courier, monospace;
+    }
 
 
-
-
-
-/* TEST */
-
+  }

@@ -76,9 +76,9 @@ body{
     justify-content: center;
 }
 
-video{
+.video{
+    aspect-ratio: 16 / 9;
     width: 80%;
-    padding-bottom: 2em;
 }
 
 

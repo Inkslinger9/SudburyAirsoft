@@ -49,6 +49,13 @@ body{
     min-height: 100vh;
 }
 
+#p-image{
+    width: 50vw;
+    border-radius: 15px;
+    float: inline-start;
+    margin-right: 1rem;
+}
+
 
 .message-div{
     height: 100%;
@@ -67,6 +74,7 @@ body{
     align-self: center;
     justify-self: center ;
     padding: 50px;
+ 
 }
 
 /* VIDEO */
@@ -154,10 +162,12 @@ body{
   }
 
   /* Using css grid */
+
 .gallery{
     padding: 10%;
     display: grid;  
     gap: 20px;
+   
 
     /* Creates a grid with repeating columns based on the min and max values. */
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
@@ -183,6 +193,7 @@ body{
         color: aliceblue;
         font-size: large;
         font-family:'Courier New', Courier, monospace;
+
     }
 
     /* Reduce columns to 1 (Needed because min size (400px) is too large for screen */
@@ -190,7 +201,18 @@ body{
         grid-template-columns: 1fr;
     }
 
+    #p-image{
+        width: 50vw;
+        border-radius: 15px;
+        float: none;
+        margin-right: 1rem;
+        justify-self: center;
+    }
 
 
 
   }
+
+
+
+  /* ANIMATIONS */
